@@ -25,6 +25,6 @@ int main()
   double d = 9999999999.9999;
   char f = 'A';
   scanf("%d %lld %f %lf %c", &a, &b, &c, &d, &f);
-  printf("%d %lld %f %lf %c", a, b, c, d, f);
+  printf("%d %lld %.2f %.2lf %c", a, b, c, d, f);
   return 0;
 }
