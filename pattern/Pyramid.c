@@ -14,6 +14,7 @@ void print_start(int num)
   }
   printf("\n");
 }
+
 int main()
 {
   int a = 6;
