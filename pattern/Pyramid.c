@@ -1,36 +1,32 @@
 #include <stdio.h>
+
 void print_space(int num)
 {
-  for (int i = 1; i <= num; i++)
+  for (int i = 0; i < num; i++)
   {
     printf(" ");
   }
 }
-void print_start(int num)
+
+void print_star(int num)
 {
-  for (int i = 1; i <= num; i++)
+  for (int i = 0; i < num; i++)
   {
-    printf(" *");
+    printf("*");
   }
   printf("\n");
 }
 
 int main()
 {
-  int a = 6;
+  int a;
   scanf("%d", &a);
+
   for (int i = 0; i < a; i++)
   {
-    if (i == 0)
-    {
-      print_space(a - i);
-      print_start(1);
-    }
-    else
-    {
-      print_space(a - (i + 1));
-      print_start(i + 2);
-    }
+    print_space(a - i - 1);
+    print_star(2 * i + 1);
   }
+
   return 0;
 }
