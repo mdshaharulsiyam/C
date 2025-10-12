@@ -11,6 +11,7 @@ void print_star(int num)
     printf("*");
   printf("\n");
 }
+
 int main()
 {
   int n;
