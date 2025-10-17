@@ -7,11 +7,11 @@ int main()
   {
     int a;
     scanf("%d", &a);
-    while (a != 0)
+    do
     {
       printf("%d ", a % 10);
       a /= 10;
-    };
+    } while (a != 0);
     printf("\n");
   }
   return 0;
